@@ -1,9 +1,11 @@
 #include <iostream>
 #include <thread>
 
+#include "Log.h"
+
 void func()
 {
-	std::cout << "Hello World!" << std::endl;
+	Log("Hello World!");
 	std::cout << std::this_thread::get_id() << std::endl;
 }
 
